@@ -24,7 +24,7 @@ CUDA的特色功能：
 - **线程束（Warp）**
 - **线程（Thread）**
 
-![线程管理](/Users/peihuanni/CUDA/线程管理.png)
+![线程管理](https://github.com/PeihuanNi/learn-CUDA/blob/master/%E7%BA%BF%E7%A8%8B%E7%AE%A1%E7%90%86.png)
 
 可以看到
 
@@ -42,7 +42,7 @@ CUDA的特色功能：
 - **常量内存**
 - **全局内存：**容量最大，延迟最高，最常使用的内存
 
-![内存管理](/Users/peihuanni/CUDA/内存管理.png)
+![内存管理](https://github.com/PeihuanNi/learn-CUDA/blob/master/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86.png)
 
 ## GPU硬件基础
 
@@ -50,7 +50,7 @@ CUDA的特色功能：
 
 每个GPU含有多个SM，每个SM又含有多个计算核
 
-![Nvidia's Fermi GPU架构](/Users/peihuanni/CUDA/Fermi架构.png)
+![Nvidia's Fermi GPU架构](https://github.com/PeihuanNi/learn-CUDA/blob/master/Fermi%E6%9E%B6%E6%9E%84.png)
 
 可以看到每个SM（Streaming Multiprocesor）包含
 
@@ -76,7 +76,7 @@ CUDA采用单指令多线程架构（**SIMT**，Single Instruction Multiple Thre
 
 线程和硬件的关系如下图
 
-![Software with corresponding hardware hierarchy in CUDA](/Users/peihuanni/CUDA/软件vs硬件.png)
+![Software with corresponding hardware hierarchy in CUDA](https://github.com/PeihuanNi/learn-CUDA/blob/master/%E8%BD%AF%E4%BB%B6vs%E7%A1%AC%E4%BB%B6.png)
 
 需要注意的是，一个Block只能在一个SM上调度，一旦被调度，就会保存在这个SM上直到执行完成。并且，一个SM可以容纳多个Block。
 
@@ -130,7 +130,7 @@ __global__ void sumMatrix(float * MatA,float * MatB,float * MatC,int nx,int ny)
 }
 ```
 
-![线程管理](/Users/peihuanni/CUDA/线程管理.png)
+![线程管理](https://github.com/PeihuanNi/learn-CUDA/blob/master/%E7%BA%BF%E7%A8%8B%E7%AE%A1%E7%90%86.png)
 
 这部分按照这个图来理解
 
